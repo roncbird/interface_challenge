@@ -1,9 +1,17 @@
 package com.emc.interfacechallenge.activities;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Typeface;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -12,13 +20,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.emc.interfacechallenge.R;
 import com.emc.interfacechallenge.adapters.ViewPagerAdapter;
 import com.emc.interfacechallenge.utilities.FontCache;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
+    private final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
 
     private TextView tv_back_button;
 
@@ -166,8 +181,97 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(settingsIntent);
                 break;
             case R.id.tv_main_save:
-
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                {
+                    checkPermissions(takeScreenshot());
+                }
+                else
+                {
+                    saveScreenshot(takeScreenshot());
+                }
                 break;
+        }
+    }
+
+    public Bitmap takeScreenshot()
+    {
+        vp_main.getRootView().setDrawingCacheEnabled(true);
+        Bitmap screenShot = Bitmap.createBitmap(vp_main.getRootView().getDrawingCache(true));
+        return screenShot;
+    }
+
+    public void saveScreenshot(Bitmap screenshot) {
+
+        String path = Environment.getExternalStorageDirectory() + File.separator + "Pictures/screenshot.png";
+        File imagePath = new File(path);
+        FileOutputStream fileOutputStream;
+
+        try {
+            fileOutputStream = new FileOutputStream(imagePath);
+            screenshot.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
+            fileOutputStream.flush();
+            fileOutputStream.close();
+            sendEmail(path);
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void sendEmail(String path)
+    {
+
+        Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
+                new String[] { "bsoumpholphakdy@sofi.org", "jaffa.sofi.org", "tlawson@sofi.org" });
+        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "SoFi Interface Challenge Screenshot");
+        emailIntent.setType("image/png");
+
+        Uri screenShotUri = Uri.parse("file://" + path);
+        emailIntent.putExtra(Intent.EXTRA_STREAM, screenShotUri);
+        startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+
+    }
+
+    public void checkPermissions(Bitmap screenshot)
+    {
+
+        int writeExternalStorage = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (writeExternalStorage != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
+        else
+        {
+            saveScreenshot(screenshot);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE: {
+
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    saveScreenshot(takeScreenshot());
+                }
+                else
+                {
+                    Toast.makeText(this, "Permission denied: Unable to save screen shot.", Toast.LENGTH_LONG).show();
+                }
+                return;
+            }
         }
     }
 }

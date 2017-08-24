@@ -49,6 +49,7 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/tv_main_settings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -58,6 +59,7 @@
                 android:textSize="18sp"/>
 
             <TextView
+                android:id="@+id/tv_main_save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
