@@ -5,9 +5,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.emc.interfacechallenge.fragments.Basics;
-import com.emc.interfacechallenge.fragments.Photos;
-import com.emc.interfacechallenge.fragments.Preferences;
+import com.emc.interfacechallenge.fragments.BasicsFragment;
+import com.emc.interfacechallenge.fragments.PhotosFragment;
+import com.emc.interfacechallenge.fragments.PreferencesFragment;
 
 import java.util.ArrayList;
 
@@ -27,9 +27,9 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     private void initializeFragments()
     {
-        fragmentsList.add(Basics.newInstances());
-        fragmentsList.add(Preferences.newInstances());
-        fragmentsList.add(Photos.newInstance());
+        fragmentsList.add(BasicsFragment.newInstances());
+        fragmentsList.add(PreferencesFragment.newInstances());
+        fragmentsList.add(PhotosFragment.newInstance());
 
     }
 

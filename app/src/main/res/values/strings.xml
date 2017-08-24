@@ -1,17 +1,19 @@
 <resources>
-    <string name="app_name">SoFiInterfaceChallenge</string>
+    <string name="app_name">Interface Challenge</string>
 
     <!-- FontAwesome Strings -->
-    <string name="back_icon">&#xf104;</string>
-    <string name="delete_image">&#xf057;</string>
+    <string name="fa_back_icon">&#xf104;</string>
+    <string name="fa_delete_image">&#xf057;</string>
 
     <!--activity_main.xml textview strings-->
     <string name="tv_main_back">Back</string>
     <string name="tv_main_settings">Settings</string>
     <string name="tv_main_save">Save</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!--fragment_basics.xml textview strings-->
     <string name="hello_basic_fragment">Hello Basics fragment</string>
+
+    <!--fragment_preferences.xml textview strings-->
     <string name="hello_preference_fragment">Hello Preferences fragment</string>
 
 </resources>

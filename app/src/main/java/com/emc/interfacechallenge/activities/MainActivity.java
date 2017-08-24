@@ -121,6 +121,8 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+        vp_main.setCurrentItem(2, false);
     }
 
     public View getTabView(int position) {

@@ -12,10 +12,11 @@ import com.emc.interfacechallenge.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Photos extends Fragment
+public class PreferencesFragment extends Fragment
 {
 
-    public Photos()
+
+    public PreferencesFragment()
     {
         // Required empty public constructor
     }
@@ -26,12 +27,12 @@ public class Photos extends Fragment
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_photos, container, false);
+        return inflater.inflate(R.layout.fragment_preferences, container, false);
     }
 
-    public static Photos newInstance()
+    public static PreferencesFragment newInstances()
     {
-        return new Photos();
+        return new PreferencesFragment();
     }
 
 }

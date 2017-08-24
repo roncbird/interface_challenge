@@ -12,11 +12,11 @@ import com.emc.interfacechallenge.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Preferences extends Fragment
+public class BasicsFragment extends Fragment
 {
 
 
-    public Preferences()
+    public BasicsFragment()
     {
         // Required empty public constructor
     }
@@ -27,12 +27,12 @@ public class Preferences extends Fragment
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_preferences, container, false);
+        return inflater.inflate(R.layout.fragment_basics, container, false);
     }
 
-    public static Preferences newInstances()
+    public static BasicsFragment newInstances()
     {
-        return new Preferences();
+        return new BasicsFragment();
     }
 
 }
