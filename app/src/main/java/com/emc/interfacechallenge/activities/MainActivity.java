@@ -1,5 +1,6 @@
 package com.emc.interfacechallenge.activities;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -16,7 +17,7 @@ import com.emc.interfacechallenge.R;
 import com.emc.interfacechallenge.adapters.ViewPagerAdapter;
 import com.emc.interfacechallenge.utilities.FontCache;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
 
     private TextView tv_back_button;
@@ -40,8 +41,8 @@ public class MainActivity extends AppCompatActivity
         tv_back_button = (TextView)findViewById(R.id.tv_back_button);
         tv_back_button.setTypeface(fontAwesome);
 
-        vp_main = (ViewPager)findViewById(R.id.vp_main);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), this);
+        vp_main = (ViewPager)findViewById(R.id.vp_main);
         vp_main.setAdapter(viewPagerAdapter);
         vp_main.setOffscreenPageLimit(3);
 
@@ -123,9 +124,15 @@ public class MainActivity extends AppCompatActivity
         });
 
         vp_main.setCurrentItem(2, false);
+
+        TextView tv_main_save = (TextView)findViewById(R.id.tv_main_save);
+        tv_main_save.setOnClickListener(this);
+        TextView tv_main_settings =(TextView)findViewById(R.id.tv_main_settings);
+        tv_main_settings.setOnClickListener(this);
     }
 
     public View getTabView(int position) {
+
         View tab = LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         tab.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
@@ -147,5 +154,20 @@ public class MainActivity extends AppCompatActivity
         TextView tv = (TextView) tab.findViewById(R.id.custom_tab_text);
         tv.setText(tabTitles[position]);
         return tab;
+    }
+
+    @Override
+    public void onClick(View v)
+    {
+        switch(v.getId())
+        {
+            case R.id.tv_main_settings:
+                Intent settingsIntent = new Intent(this, SettingsActivity.class);
+                startActivity(settingsIntent);
+                break;
+            case R.id.tv_main_save:
+
+                break;
+        }
     }
 }

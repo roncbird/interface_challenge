@@ -73,15 +73,15 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="420dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="25dp"
             android:layout_gravity="center_horizontal"
-            app:tabIndicatorColor="@android:color/transparent"
-            app:tabPaddingStart="0dp"
-            app:tabPaddingEnd="0dp"
+            android:layout_marginTop="18dp"
             android:padding="0dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@android:color/transparent"
             app:tabMaxWidth="0dp"
-            app:tabGravity="fill"/>
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"/>
 
     </LinearLayout>
 

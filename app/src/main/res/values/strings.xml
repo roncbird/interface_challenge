@@ -20,4 +20,6 @@
     <string name="tv_photos_profile_info">PROFILE INFO</string>
     <string name="tv_photos_profile_number"># \/&#160;</string>
 
+    <!--activity_settings.xml textview strings -->
+    <string name="tv_hello_settings_activity">Hello Settings Activity</string>
 </resources>
