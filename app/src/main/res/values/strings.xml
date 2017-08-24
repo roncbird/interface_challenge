@@ -16,4 +16,8 @@
     <!--fragment_preferences.xml textview strings-->
     <string name="hello_preference_fragment">Hello Preferences fragment</string>
 
+    <!--fragment_photos.xml textview strings-->
+    <string name="tv_photos_profile_info">PROFILE INFO</string>
+    <string name="tv_photos_profile_number"># \/&#160;</string>
+
 </resources>

@@ -22,7 +22,8 @@
                 android:id="@+id/iv_one"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/black"
+                android:alpha=".2"/>
 
             <TextView
                 android:id="@+id/tv_delete_image_one"
@@ -59,7 +60,8 @@
                     android:id="@+id/iv_two"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="@android:color/black"
+                    android:alpha=".2"/>
 
                 <TextView
                     android:id="@+id/tv_delete_image_two"
@@ -87,7 +89,8 @@
                     android:id="@+id/iv_three"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray"/>
+                    android:background="@android:color/black"
+                    android:alpha=".2"/>
 
                 <TextView
                     android:id="@+id/tv_delete_image_three"
@@ -129,7 +132,8 @@
                 android:id="@+id/iv_four"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/black"
+                android:alpha=".2"/>
 
             <TextView
                 android:id="@+id/tv_delete_image_four"
@@ -158,7 +162,8 @@
                 android:id="@+id/iv_five"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/black"
+                android:alpha=".2"/>
 
             <TextView
                 android:id="@+id/tv_delete_image_five"
@@ -186,7 +191,8 @@
                 android:id="@+id/iv_six"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/black"
+                android:alpha=".2"/>
 
             <TextView
                 android:id="@+id/tv_delete_image_six"
@@ -205,19 +211,61 @@
         </RelativeLayout>
 
     </LinearLayout>
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="15dp">
+        android:layout_height="65dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="18dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:text="@string/app_name"/>
+            android:text="@string/tv_photos_profile_info"
+            android:textColor="@android:color/black"
+            android:alpha=".8"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_profile_number"
+            android:layout_centerVertical="true"
+            android:text="# / "
+            android:textColor="@android:color/black"
+            android:alpha=".3"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_profile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="300"
+            android:textColor="@android:color/black"
+            android:alpha=".3"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_15_opacity"
+        android:paddingEnd="15dp"
+        android:paddingStart="18dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test setsetsel;kj s;lekjt ;lskej t;lksej tl;kj"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:alpha=".7"/>
 
     </RelativeLayout>
 

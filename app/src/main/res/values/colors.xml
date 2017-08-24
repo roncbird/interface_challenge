@@ -7,4 +7,15 @@
     <!--MainActivity colors-->
     <color name="header_color">#00769E</color>
     <color name="tab_background_white">#FFFFFF</color>
+
+    <!--fragment_photos.xml colors-->
+    <color name="black_10_opacity">#0A000000</color>
+    <color name="black_15_opacity">#15000000</color>
+    <color name="black_18_opacity">#0A000000</color>
+    <color name="black_30_opacity">#4D000000</color>
+    <color name="black_20_opacity">#33000000</color>
+    <color name="black_40_opacity">#66000000</color>
+    <color name="black_50_opacity">#81000000</color>
+    <color name="black_70_opacity">#B3000000</color>
+
 </resources>
