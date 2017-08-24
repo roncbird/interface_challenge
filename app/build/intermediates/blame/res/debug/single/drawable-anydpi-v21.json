@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/bird1/.android/build-cache/e8c142ccafce97450e545ef2f44e519e809eef26/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/bird1/.android/build-cache/e8c142ccafce97450e545ef2f44e519e809eef26/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/bird1/.android/build-cache/e8c142ccafce97450e545ef2f44e519e809eef26/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/bird1/.android/build-cache/e8c142ccafce97450e545ef2f44e519e809eef26/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    }
+]

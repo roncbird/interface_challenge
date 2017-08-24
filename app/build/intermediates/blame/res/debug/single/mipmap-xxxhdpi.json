@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/Users/bird1/Downloads/InterfaceChallenge/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/bird1/Downloads/InterfaceChallenge/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

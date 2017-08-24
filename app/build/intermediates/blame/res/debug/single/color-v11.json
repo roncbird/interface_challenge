@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

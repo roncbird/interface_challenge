@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#00769E</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--MainActivity colors-->
+    <color name="header_color">#00769E</color>
+    <color name="tab_background_white">#FFFFFF</color>
+</resources>
