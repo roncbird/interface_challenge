@@ -60,12 +60,12 @@
         "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
         "source": "/Users/bird1/.android/build-cache/e8c142ccafce97450e545ef2f44e519e809eef26/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/InterfaceChallenge/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/layout/fragment_basics.xml",

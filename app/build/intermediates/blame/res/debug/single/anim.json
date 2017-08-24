@@ -16,12 +16,12 @@
         "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/anim/abc_popup_exit.xml"
-    },
-    {
         "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/bird1/.android/build-cache/d0450ff7be0a5c1aef9374668e4cb95d91cb5259/output/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/Users/bird1/Downloads/SoFiInterfaceChallenge/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
