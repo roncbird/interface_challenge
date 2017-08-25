@@ -24,6 +24,15 @@
                 android:layout_height="match_parent"
                 android:background="@color/black_15_opacity"/>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/imageview_round_corner"></View>
+
             <TextView
                 android:id="@+id/tv_delete_image_one"
                 android:layout_width="wrap_content"
@@ -62,6 +71,15 @@
                     android:layout_height="match_parent"
                     android:background="@color/black_15_opacity"/>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginRight="-10dp"
+                    android:background="@drawable/imageview_round_corner"></View>
+
                 <TextView
                     android:id="@+id/tv_delete_image_two"
                     android:layout_width="wrap_content"
@@ -90,6 +108,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/black_15_opacity"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginRight="-10dp"
+                    android:background="@drawable/imageview_round_corner"></View>
 
                 <TextView
                     android:id="@+id/tv_delete_image_three"
@@ -134,6 +161,15 @@
                 android:layout_height="match_parent"
                 android:background="@color/black_15_opacity"/>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/imageview_round_corner"></View>
+
             <TextView
                 android:id="@+id/tv_delete_image_four"
                 android:layout_width="wrap_content"
@@ -164,6 +200,15 @@
                 android:layout_height="match_parent"
                 android:background="@color/black_15_opacity"/>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/imageview_round_corner"></View>
+
             <TextView
                 android:id="@+id/tv_delete_image_five"
                 android:layout_width="wrap_content"
@@ -192,6 +237,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/black_15_opacity"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/imageview_round_corner"></View>
 
             <TextView
                 android:id="@+id/tv_delete_image_six"
